@@ -1,0 +1,203 @@
+/* BEGIN -- CSS Resets and Sitewide Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(241, 239, 239);
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.content-section {
+  margin-bottom: 2rem;
+}
+/* END -- CSS Resets and Sitewide Styles */
+
+/* BEGIN -- Holygrail Layout Styling */
+
+@media screen and (min-width: 810px) {
+  .outer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .outer-wrap .main-content {
+    flex-basis: 75%;
+  }
+
+  .outer-wrap .sidebar {
+    flex-basis: 25%;
+    padding: 2rem;
+  }
+}
+/* END -- Holygrail Layout Styling */
+
+/* BEGIN -- Header Section Styling */
+.site-header {
+  height: 250px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-header p {
+  font-style: italic;
+  color: #f29f05;
+}
+
+.site-header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/* Navbar Styling */
+.site-nav {
+  background-color: #f29f05;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1rem 0.85rem;
+}
+
+.navbar li a:hover {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (min-width: 810px) {
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .navbar > * {
+    flex-grow: 1;
+    text-align: center;
+  }
+}
+
+/*END -- Header Section Styling */
+
+/* BEGIN -- Movie Posts Styling */
+.video-post {
+  background-color: white;
+  margin-bottom: 1.5rem;
+}
+
+.video-post h3 {
+  padding: 1rem 0rem;
+  background: #f29f05;
+  text-align: center;
+}
+
+.video-post p {
+  padding: 1rem 2rem;
+}
+
+/* END -- Movie Posts Styling */
+
+/* BEGIN -- Styling Posts for Medium Screens */
+
+@media screen and (min-width: 810px) {
+  .video-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .video-post {
+    flex-basis: 49%;
+  }
+}
+
+/* END -- Styling Posts for Medium Screens */
+
+/* BEGIN -- Styling Posts for Large Screens */
+@media screen and (min-width: 1120px) {
+  .post-half {
+    flex-basis: 49%;
+  }
+
+  .post-one-third {
+    flex-basis: 32%;
+  }
+
+  .post-full {
+    flex-basis: 100%;
+  }
+}
+/* END -- Styling Posts for Large Screens */
+
+/* BEGIN -- Styling Watch Today Section */
+.watch-today-tile {
+  margin-bottom: 1.5rem;
+  background: black;
+  color: white;
+}
+
+.watch-today-info {
+  padding: 2rem;
+}
+
+.watch-today-info > * {
+  padding-bottom: 1.2rem;
+}
+
+.today-movie-title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.today-movie-specs span {
+  padding-right: 1.1rem;
+}
+
+.watch-today-info a {
+  text-transform: lowercase;
+  color: white;
+}
+/* END -- Styling Watch Today Section */
+
+/* BEGIN -- Styling Posts for Medium Screens */
+
+@media screen and (min-width: 1120px) {
+  .watch-today-tile {
+    display: flex;
+  }
+
+  .ordered-image {
+    order: 1;
+  }
+}
+
+/* END -- Styling Posts for Medium Screens */
